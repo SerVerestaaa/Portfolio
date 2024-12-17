@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="icon" type="image/x-icon" href="./images/Logo.png">
+    <link rel="stylesheet" href="accs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="script.js"></script>
+    <!--  owl css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <!--  owl css -->
+    <!--  jquery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <!--  jquery -->
+</head>
+
+<body>
+    <nav>
+        <a href="Autosonic.html"><img src="./images/Logo.png"></a>
+        <div class="nav-links" id="navLinks" data-aos="fade-in">
+            <i class="fa fa-times" onclick="hideNavbar()"></i>
+            <ul>
+                <li><a href="Autosonic.html">Home</a></li>
+                <li><a href="Products Page.html">Products</a></li>
+                <li><a href="Services Page.html">Services</a></li>
+                <li><a href="Contacts Page.html">Contact Us</a></li>
+                <li><a href="AboutUs Page.html">About Us</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-car" onclick="showNavbar()"></i>
+    </nav>
+
+
+    <!-- Banner -->
+
+    <section id="banner-sale" class="section-m1" data-aos="slide-right" data-aos-duration="1000">
+        <h4>Anniversary Sale</h4>
+        <h2>Up to <span> 50% Off</span> - on all Repair Services & Accessories</h2>
+        <button class="normal"><a href="https://www.facebook.com/jaysonvelasco1986">Explore
+                More</a></button>
+    </section>
+
+
+    <!-- Products -->
+
+    <!--  owl js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <!--  owl js -->
+
+
+    <!-- Categories -->
+
+
+    <section class="categories top">
+        <div class="containercategories">
+            <h2>Our Categories</h2>
+            <div class="owl-carousel owl-carousel2 owl-theme">
+                <div class="item">
+                    <div class="img">
+                        <img src="./images/Products/Tires.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Tires</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="./images/Products/Spoilers.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Spoilers</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="./images/Products/Bumpers.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Bumpers</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="./images/Products/Batteries.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Batteries</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="./images/Products/Radiators.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Radiators</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="./images/Products/Brakes.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Brakes</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="./images/Products/Mufflers.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Mufflers</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="./images/Products/Car Seats.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Car Seats</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        $('.owl-carousel2').owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: true,
+            dots: false,
+            navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+
+            responsive: {
+                414: {
+                    items: 2,
+                    nav: false
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 6
+                }
+            }
+        })
+    </script>
+
+    <!------ Payment and Delivery ------>
+
+    <section class="wrapperdelivery">
+        <div class="containercategories grid top">
+            <div class="deliverybox" data-aos="fade-right">
+                <i class="far fa-user"></i>
+                <h4>24/7 Free Support</h4>
+                <p>Home service is also available on a schedule basis</p>
+            </div>
+            <div class="deliverybox" data-aos="fade-right">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h4>Free Nationwide Shipping</h4>
+                <p>We deliver via Lalamove or Toktok and Ships nationwide via LBC</p>
+            </div>
+            <div class="deliverybox" data-aos="fade-left">
+                <i class="fa-solid fa-peso-sign"></i>
+                <h4>Money Back Guarantee</h4>
+                <p>We promise refund for customers who are dissatisfied with their purchases</p>
+            </div>
+            <div class="deliverybox" data-aos="fade-left">
+                <i class="fa-solid fa-gift"></i>
+                <h4>Quality Guarantee</h4>
+                <p>We offer quality products at a reasonable price</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Page -->
+
+    <section class="Products top">
+        <div class="containercategories">
+            <div class="heading flex">
+                <h3>Specific Products</h3>
+
+                <div class="button flex">
+                    <button class="btnstyle">Featured</button>
+                </div>
+            </div>
+
+
+            <div class="owl-carousel owl-carousel2 owl-theme mtop">
+                <div class="item">
+                    <div class="image">
+                        <img src="./images/Products/Skid Plate.jpg" class="main">
+                        <img src="./images/Products Top/terra.png" class="hover_image">
+
+                        <div class="img_text flex1">
+                            <span>Sale</span>
+                            <span>50%</span>
+                        </div>
+
+                        <div class="overlayproducts">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-eye"></i>
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <h3>SKid Plate For Nissan Terra</h3>
+                        <div class="rating flex">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <h3>₱1,250.00 <span>₱2,500.00</span> </h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="./images/Products/Roll Bars.jpg" class="main">
+                        <img src="./images/Products Top/colorado.png" class="hover_image">
+
+                        <div class="img_text flex1">
+                            <span>Sale</span>
+                            <span>50%</span>
+                        </div>
+
+                        <div class="overlayproducts">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-eye"></i>
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <h3>Roll Bars For Chevrolet Colorado</h3>
+                        <div class="rating flex">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <h3>₱5,500.00 <span>₱11,000.00</span> </h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="./images/Products/Bull Bars.jpg" class="main">
+                        <img src="./images/Products Top/crosswind.png" class="hover_image">
+
+                        <div class="img_text flex1">
+                            <span>Sale</span>
+                            <span>50%</span>
+                        </div>
+
+                        <div class="overlayproducts">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-eye"></i>
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <h3>Bull Bars For Isuzu Crosswind</h3>
+                        <div class="rating flex">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <h3>₱3,500.00 <span>₱7,000.00</span> </h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="./images/Products/Hoodguard.png" class="main">
+                        <img src="./images/Products Top/DMAX accessories.png" class="hover_image">
+
+                        <div class="img_text flex1">
+                            <span>Sale</span>
+                            <span>50%</span>
+                        </div>
+
+                        <div class="overlayproducts">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-eye"></i>
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <h3>Hood Guard For Izusu Dmax</h3>
+                        <div class="rating flex">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <h3>₱1,750.00 <span>₱3,500.00</span> </h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="./images/Products/Bear Rack.jpg" class="main">
+                        <img src="./images/Products Top/ecosport.png" class="hover_image">
+
+                        <div class="img_text flex1">
+                            <span>Sale</span>
+                            <span>50%</span>
+                        </div>
+
+                        <div class="overlayproducts">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-eye"></i>
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <h3>Bear Rack For Ford EcoSport</h3>
+                        <div class="rating flex">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <h3>₱4,500.00 <span>₱9,000.00</span> </h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="./images/Products/Nudge Bar.png" class="main">
+                        <img src="./images/Products Top/everest.png" class="hover_image">
+
+                        <div class="img_text flex1">
+                            <span>Sale</span>
+                            <span>50%</span>
+                        </div>
+
+                        <div class="overlayproducts">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-eye"></i>
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <h3>Nudge Bar For Ford Everest</h3>
+                        <div class="rating flex">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <h3>₱2,800.00 <span>₱5,600.00</span> </h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="./images/Products/Headlight Cover.jpg" class="main">
+                        <img src="./images/Products Top/innova.png" class="hover_image">
+
+                        <div class="img_text flex1">
+                            <span>Sale</span>
+                            <span>50%</span>
+                        </div>
+
+                        <div class="overlayproducts">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-eye"></i>
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <h3>Headlight Cover For Toyota Innova</h3>
+                        <div class="rating flex">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <h3>₱600.00 <span>₱1,200.00</span> </h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="./images/Products/Tow Hitch Bar.jpg" class="main">
+                        <img src="./images/Products Top/navara.png" class="hover_image">
+
+                        <div class="img_text flex1">
+                            <span>Sale</span>
+                            <span>50%</span>
+                        </div>
+
+                        <div class="overlayproducts">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-eye"></i>
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <h3>Tow Hitch Bar For Nissan Navara</h3>
+                        <div class="rating flex">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <h3>₱1,700.00 <span>₱3,400.00</span> </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        $('.owl-carousel2').owlCarousel({
+            loop: true,
+            margin: 30,
+            nav: true,
+            dots: false,
+            navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+            responsive: {
+                414: {
+                    items: 1,
+                    nav: false
+                },
+                768: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+    </script>
+
+    <section class="Products Products2 top">
+        <div class="containercategories">
+            <h2>Car Accessories</h2>
+            <div class="content flex">
+                <div class="arrowleft mtop">
+                    <div class="left_img">
+                        <img src="./images/ProductsLogo.jpg" alt="">
+                    </div>
+                </div>
+                <div class="arrowright">
+                    <div class="owl-carousel owl-carousel2 owl-theme mtop">
+                        <div class="items-grid">
+                            <div class="item">
+                                <div class="image">
+                                    <img src="./images/Products/Car Seats.jpg" class="main">
+                                    <img src="./images/Products Top/black series seatcover.png" class="hover_image">
+
+                                    <div class="img_text flex1">
+                                        <span>Sale</span>
+                                        <span>50%</span>
+                                    </div>
+
+                                    <div class="overlayproducts">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        <i class="far fa-heart"></i>
+                                        <i class="far fa-eye"></i>
+                                    </div>
+                                </div>
+
+                                <div class="text">
+                                    <h3>Car Seats</h3>
+                                    <div class="rating flex">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <h3>₱1,700.00 <span>₱3,400.00</span> </h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="image">
+                                    <img src="./images/Products/Tires2.png" class="main">
+                                    <img src="./images/Products Top/mags.png" class="hover_image">
+
+                                    <div class="img_text flex1">
+                                        <span>Sale</span>
+                                        <span>50%</span>
+                                    </div>
+
+                                    <div class="overlayproducts">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        <i class="far fa-heart"></i>
+                                        <i class="far fa-eye"></i>
+                                    </div>
+                                </div>
+
+                                <div class="text">
+                                    <h3>Tires with Mags</h3>
+                                    <div class="rating flex">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <h3>₱7,500.00 <span>₱15,000.00</span> </h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="image">
+                                    <img src="./images/Products/Mufflers.jpg" class="main">
+                                    <img src="./images/Products Top/muffler.png" class="hover_image">
+
+                                    <div class="img_text flex1">
+                                        <span>Sale</span>
+                                        <span>50%</span>
+                                    </div>
+
+                                    <div class="overlayproducts">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        <i class="far fa-heart"></i>
+                                        <i class="far fa-eye"></i>
+                                    </div>
+                                </div>
+
+                                <div class="text">
+                                    <h3>Car Mufflers</h3>
+                                    <div class="rating flex">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <h3>₱3,200.00 <span>₱6,400.00</span> </h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="image">
+                                    <img src="./images/Products/Hoodscoop.jpg" class="main">
+                                    <img src="./images/Products Top/hoodscoop.png" class="hover_image">
+
+                                    <div class="img_text flex1">
+                                        <span>Sale</span>
+                                        <span>50%</span>
+                                    </div>
+
+                                    <div class="overlayproducts">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        <i class="far fa-heart"></i>
+                                        <i class="far fa-eye"></i>
+                                    </div>
+                                </div>
+
+                                <div class="text">
+                                    <h3>Hoodscoops</h3>
+                                    <div class="rating flex">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <h3>₱8,500.00 <span>₱17,000.00</span> </h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="image">
+                                    <img src="./images/Products/Mudguard.jpg" class="main">
+                                    <img src="./images/Products Top/mudguard.png" class="hover_image">
+
+                                    <div class="img_text flex1">
+                                        <span>Sale</span>
+                                        <span>50%</span>
+                                    </div>
+
+                                    <div class="overlayproducts">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        <i class="far fa-heart"></i>
+                                        <i class="far fa-eye"></i>
+                                    </div>
+                                </div>
+
+                                <div class="text">
+                                    <h3>Mud Guards</h3>
+                                    <div class="rating flex">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <h3>₱1,250.00 <span>₱2,580.00</span> </h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="image">
+                                    <img src="./images/Products/Steering Wheel.jpg" class="main">
+                                    <img src="./images/Products Top/steering wheel covers.png" class="hover_image">
+
+                                    <div class="img_text flex1">
+                                        <span>Sale</span>
+                                        <span>50%</span>
+                                    </div>
+
+                                    <div class="overlayproducts">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        <i class="far fa-heart"></i>
+                                        <i class="far fa-eye"></i>
+                                    </div>
+                                </div>
+
+                                <div class="text">
+                                    <h3>Steering Wheel Cover</h3>
+                                    <div class="rating flex">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <h3>₱900.00 <span>₱1,800.00</span> </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        $('.owl-carousel2').owlCarousel({
+            loop: true,
+            margin: 30,
+            nav: false,
+            dots: false,
+            navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+    </script>
+
+    <!-- Anniversary -->
+
+    <div class="offer">
+        <div class="small-container" data-aos="zoom-in-up">
+            <div class="row">
+                <div class="col-2">
+                    <img src="./images/Logo.png" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Exclusive Available on Autosonic Car Accessories</p>
+                    <h1>❗️❗️ANNIVERSARY SALE❗️❗️</h1>
+                    <small>We are celebrating our 2nd year anniversary here in Pampanga branch! As a way of showing
+                        our
+                        deepest gratitude, we are offering discounts on most of our accessories from March 13-April
+                        30,
+                        2023! Have your pick ups Summer Vacation ready by installing roller lid for as low as
+                        P25,000
+                        only!<br>
+                        <br>✔️FREE Installation!!!
+                        <br>✔️Guaranteed 100% Leakproof!
+                        <br>✔️No drilling!<br>
+                        <br>Home service also available on schedule basis. Message or give us a call now for more
+                        details.</small>
+                    <br>
+                    <a href="https://www.facebook.com/jaysonvelasco1986" class="btn">Check Out Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="Products Products2 Products3 top">
+        <div class="containercategories">
+            <h2>Best Products</h2>
+            <div class="content flex">
+                <div class="arrowleft mtop">
+                    <div class="left_img">
+                        <img src="./images/ProductsLogo.jpg" alt="">
+                    </div>
+                </div>
+                <div class="arrowright">
+                    <div class="owl-carousel owl-carousel2 owl-theme mtop">
+                        <div class="items-grid">
+                            <div class="item">
+                                <div class="image">
+                                    <img src="./images/Products/Headlight Cover.jpg" class="main">
+                                    <img src="./images/Products/Headlight Coverss.jpg" class="hover_image">
+
+                                    <div class="img_text flex1">
+                                        <span>Sale</span>
+                                        <span>50%</span>
+                                    </div>
+
+                                    <div class="overlayproducts">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        <i class="far fa-heart"></i>
+                                        <i class="far fa-eye"></i>
+                                    </div>
+                                </div>
+
+                                <div class="text">
+                                    <h3>Chrome - Headlight Cover</h3>
+                                    <div class="rating flex">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <h3>₱1,600.00 <span>₱3,200.00</span> </h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="image">
+                                    <img src="./images/Products/Rain Visor.jpg" class="main">
+                                    <img src="./images/Products/Rain Visor2.jpg" class="hover_image">
+
+                                    <div class="img_text flex1">
+                                        <span>Sale</span>
+                                        <span>50%</span>
+                                    </div>
+
+                                    <div class="overlayproducts">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        <i class="far fa-heart"></i>
+                                        <i class="far fa-eye"></i>
+                                    </div>
+                                </div>
+
+                                <div class="text">
+                                    <h3>Rain Visor</h3>
+                                    <div class="rating flex">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <h3>₱650.00 <span>₱1,300.00</span> </h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="image">
+                                    <img src="./images/Products/Car Mat.jpg" class="main">
+                                    <img src="./images/Products/Car Mat2.jpg" class="hover_image">
+
+                                    <div class="img_text flex1">
+                                        <span>Sale</span>
+                                        <span>50%</span>
+                                    </div>
+
+                                    <div class="overlayproducts">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        <i class="far fa-heart"></i>
+                                        <i class="far fa-eye"></i>
+                                    </div>
+                                </div>
+
+                                <div class="text">
+                                    <h3>Car Mat</h3>
+                                    <div class="rating flex">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <h3>₱2,100.00 <span>₱4,200.00</span> </h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="image">
+                                    <img src="./images/Products/Door Handle.jpg" class="main">
+                                    <img src="./images/Products/Door Handle2.jpg" class="hover_image">
+
+                                    <div class="img_text flex1">
+                                        <span>Sale</span>
+                                        <span>50%</span>
+                                    </div>
+
+                                    <div class="overlayproducts">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        <i class="far fa-heart"></i>
+                                        <i class="far fa-eye"></i>
+                                    </div>
+                                </div>
+
+                                <div class="text">
+                                    <h3>Door Handle</h3>
+                                    <div class="rating flex">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <h3>₱1,175.00 <span>₱2,350.00</span> </h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="image">
+                                    <img src="./images/Products/Fender Flare.jpg" class="main">
+                                    <img src="./images/Products/Fender Flare2.jpg" class="hover_image">
+
+                                    <div class="img_text flex1">
+                                        <span>Sale</span>
+                                        <span>50%</span>
+                                    </div>
+
+                                    <div class="overlayproducts">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        <i class="far fa-heart"></i>
+                                        <i class="far fa-eye"></i>
+                                    </div>
+                                </div>
+
+                                <div class="text">
+                                    <h3>Fender Flare</h3>
+                                    <div class="rating flex">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <h3>₱960.00 <span>₱1,920.00</span> </h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="image">
+                                    <img src="./images/Products/Door Handle Cover.jpg" class="main">
+                                    <img src="./images/Products/Door Handle Cover2.jpg" class="hover_image">
+
+                                    <div class="img_text flex1">
+                                        <span>Sale</span>
+                                        <span>50%</span>
+                                    </div>
+
+                                    <div class="overlayproducts">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        <i class="far fa-heart"></i>
+                                        <i class="far fa-eye"></i>
+                                    </div>
+                                </div>
+
+                                <div class="text">
+                                    <h3>Door Handle Cover</h3>
+                                    <div class="rating flex">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <h3>₱825.00 <span>₱1,650.00</span> </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        $('.owl-carousel2').owlCarousel({
+            loop: true,
+            items: 1,
+            margin: 30,
+            nav: false,
+            dots: false,
+            navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+
+        })
+    </script>
+
+
+    <!-- Brands -->
+
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="./images/bugatti-logo.png">
+                </div>
+                <div class="col-5">
+                    <img src="./images/chevrolet-logo.png">
+                </div>
+                <div class="col-5">
+                    <img src="./images/ferrari-logo.png">
+                </div>
+                <div class="col-5">
+                    <img src="./images/ford-logo.png">
+                </div>
+                <div class="col-5">
+                    <img src="./images/mitsubishi-logo.png">
+                </div>
+                <div class="col-5">
+                    <img src="./images/corvette-logo.png">
+                </div>
+                <div class="col-5">
+                    <img src="./images/kia-logo.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer  -->
+
+    <div class="footer">
+        <div class="containerfooter">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Our shop is located at:</h3>
+                    <li>SEAOIL Filling Station, Lagundi Mexico <br>Pampanga (Beside SM Pampanga)</li>
+                    <li>WAZE/Google map👇 <br>
+                        AUTOSONIC CAR ACCESSORIES</li>
+                </div>
+                <div class="footer-col-2">
+                    <a href="#banner"><img src="./images/Logo.png"></a>
+                    <h3>"Keeping The City Clean One Car At A Time."</h3>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="https://www.ford.com.ph">Ford</a></li>
+                        <li><a href="https://www.ferrari.com/en-PH">Ferrari</a></li>
+                        <li><a href="https://www.nissan.ph">Nissan</a></li>
+                        <li><a href="https://toyota.com.ph">Toyota</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li><i class="fa-brands fa-facebook-f"></i> <a
+                                href="https://www.facebook.com/jaysonvelasco1986">Facebook</a></li>
+                        <li><i class="fa-brands fa-instagram"></i><a
+                                href="https://www.instagram.com/autosoniclipa/?fbclid=IwAR2domIpO8vLwOW4RTfeU0DuRZ3Yx73n_BFY8bMQ8QqYYtfbfVld_xJ9nGo">
+                                Instagram</a>
+                        </li>
+                        <li><i class="fa-brands fa-twitter"></i> Twitter</li>
+                        <li><i class="fa-brands fa-youtube"></i> Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Made with <i class="fa-regular fa-heart"></i> by Sam and Machi / All Rights Reserved
+                </h3>
+        </div>
+    </div>
+
+    <a href="#" class="topBtn" id="scroll-to-top">
+        <i class="fa-solid fa-square-caret-up fa-bounce fa-2xl" style="color: #33457a;"></i>
+    </a>
+
+
+
+
+
+    <!----- JavaScript ----->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showNavbar() {
+            navLinks.style.right = "0";
+        }
+
+        function hideNavbar() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script> //onscroll effect
+        AOS.init({
+            duration: 2000,
+            once: false,
+            easing: 'ease'
+        });
+    </script>
+
+
+    <script> //scrollTopBtn
+        const scrollToTopButton = document.getElementById("scroll-to-top");
+
+        window.onscroll = function () {
+            if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+                scrollToTopButton.style.display = "block";
+            } else {
+                scrollToTopButton.style.display = "none";
+            }
+        }
+
+        scrollToTopButton.addEventListener("click", function () {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script>
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop()) {
+                $("nav").addClass("black");
+            }
+            else {
+                $("nav").removeClass("black");
+            }
+        });
+    </script>
+
+    <script> //modal
+        document.getElementById("open-modal").addEventListener("click", function () {
+            document.getElementById("modal").style.display = "block";
+        });
+
+        document.getElementsByClassName("close")[0].addEventListener("click", function () {
+            document.getElementById("modal").style.display = "none";
+        });
+
+        document.getElementById("submit-rating").addEventListener("click", function () {
+            var selectedRating = document.querySelector(".star.active");
+            if (selectedRating) {
+                var ratingValue = selectedRating.getAttribute("data-rating");
+                alert("Thank You!");
+                document.getElementById("modal").style.display = "none";
+            } else {
+                alert("Please select a rating.");
+            }
+        });
+
+        document.querySelectorAll(".star").forEach(function (star) {
+            star.addEventListener("click", function () {
+                document.querySelectorAll(".star").forEach(function (star) {
+                    star.classList.remove("active");
+                });
+                star.classList.add("active");
+            });
+        });
+
+    </script>
+</body>
+
+</html>

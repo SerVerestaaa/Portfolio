@@ -1,0 +1,104 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    padding-top: 20vh;
+    filter: saturate(200%);
+}
+
+.imgbox img {
+    position: relative;
+    height: 100%;
+    top: -10px;
+    right: 50px;
+    animation: animateUser 3s linear infinite;
+}
+
+@keyframes animateUser {
+    50% {
+        right: 10px;
+        top: -30px;
+    }
+}
+
+
+h3 {
+    display: block;
+    color: rgb(248, 222, 239);
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    padding: 1rem;
+    width: 25%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 60px;
+    max-width: 100%;
+    margin-top: 1rem;
+    z-index: 1;
+    box-shadow: none;
+    transition: all 0.3s ease 0s;
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+button {
+    border-radius: 1.5rem;
+    border: none;
+    font-size: large;
+    font-weight: lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: white;
+    background-image: linear-gradient(to right, #41295a 0%, #2F0743 51%, #41295a 100%)
+}
+
+button:hover {
+    background-image: linear-gradient(to right,
+            #E7484F,
+            #E7484F 16.65%,
+            #F68B1D 16.65%,
+            #F68B1D 33.3%,
+            #FCED00 33.3%,
+            #FCED00 49.95%,
+            #009E4F 49.95%,
+            #009E4F 66.6%,
+            #00AAC3 66.6%,
+            #00AAC3 83.25%,
+            #732982 83.25%,
+            #732982 100%,
+            #E7484F 100%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    animation: slidebg 2s linear infinite;
+
+}
+
+@keyframes slidebg {
+    to {
+        background-position: 20vw;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

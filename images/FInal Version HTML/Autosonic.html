@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autosonic</title>
+    <link rel="icon" type="image/x-icon" href="./images/Logo.png">
+    <link rel="stylesheet" href="accs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="script.js"></script>
+    <!--  owl css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <!--  owl css -->
+    <!--  jquery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <!--  jquery -->
+</head>
+
+<body>
+    <nav>
+        <a href="Autosonic.html"><img src="./images/Logo.png"></a>
+        <div class="nav-links" id="navLinks" data-aos="fade-in">
+            <i class="fa fa-times" onclick="hideNavbar()"></i>
+            <ul>
+                <li><a href="Autosonic.html">Home</a></li>
+                <li><a href="Products Page.html">Products</a></li>
+                <li><a href="Services Page.html">Services</a></li>
+                <li><a href="Contacts Page.html">Contact Us</a></li>
+                <li><a href="AboutUs Page.html">About Us</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-car" onclick="showNavbar()"></i>
+    </nav>
+    <section class="header" data-aos="zoom-in" data-aos-duration="1000">
+
+        <div id="banner" data-aos="fade-down">
+            <div class="banner-text">
+                <h1>Autosonic Car Accessories</h1>
+                <p>"Keeping The City Clean One Car At A Time."</p>
+                <div class="banner-btn">
+                    <a href="https://www.facebook.com/jaysonvelasco1986"><span></span>Visit Us</a>
+                    <a href="#readMore"><span></span>Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+
+    <div class="feature-box">
+        <h1 class="title"><br>Featured Products</h1>
+        <div class="row" data-aos="slide-left" data-aos-duration="1000">
+            <div class="col-4">
+                <a href="products-details.html"><img src="./images/Garnish Set.jpg"></a>
+                <a href="products-details.html">
+                    <h4>Garnish Set</h4>
+                </a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>₱2, 800.00</p>
+            </div>
+
+            <div class="col-4">
+                <img src="./images/Rain Visor.png">
+                <h4>Rain Visor</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>₱1, 500.00</p>
+            </div>
+
+            <div class="col-4">
+                <img src="./images/Side stepsill.jpg">
+                <h4>Side Stepsill</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>₱1, 500.00</p>
+            </div>
+
+            <div class="col-4">
+                <img src="./images/Rear Stepsill.jpg">
+                <h4>Rear Stepsill</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>₱1, 800.00</p>
+            </div>
+
+            <div class="col-4">
+                <img src="./images/Deepdish.jpg">
+                <h4>Deep Dish</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>₱3, 500.00</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!------ Payment and Delivery ------>
+
+    <section class="wrapperdelivery">
+        <div class="containercategories grid top">
+            <div class="deliverybox" data-aos="fade-right">
+                <i class="far fa-user"></i>
+                <h4>24 X 7 Free Support</h4>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+            <div class="deliverybox" data-aos="fade-right">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h4>Free Nationwide Shipping</h4>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+            <div class="deliverybox" data-aos="fade-left">
+                <i class="fa-solid fa-peso-sign"></i>
+                <h4>Money Bank Guarantee</h4>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+            <div class="deliverybox" data-aos="fade-left">
+                <i class="fa-solid fa-gift"></i>
+                <h4>Quality Guarantee</h4>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner -->
+
+    <section id="banner-sale" class="section-m1" data-aos="slide-right" data-aos-duration="1000">
+        <h4>Anniversary Sale</h4>
+        <h2>Up to <span> 50% Off</span> - on all Repair Services & Accessories</h2>
+        <button class="normal"><a href="https://www.facebook.com/jaysonvelasco1986">Explore
+                More</a></button>
+    </section>
+
+    <!-- Features -->
+
+    <section id="feature">
+        <div class="title-text" id="readMore">
+            <h1>Why Choose Us</h1>
+        </div>
+        <div class="feature-box">
+            <div class="features">
+                <h1>Experienced Staff</h1>
+                <div class="features-desc" data-aos="slide-right">
+                    <div class="feature-icon">
+                        <i class="fa-sharp fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="feature-text">
+                        <p>
+                            Our business prides itself on having a team of experienced staff who possess the knowledge
+                            and skills necessary to
+                            provide exceptional service to our customers.
+                            With years of experience in the industry, our staff are equipped to handle any challenge
+                            that may arise, ensuring that
+                            our customers receive the best possible service.
+                            The experience and expertise of our staff allow us to maintain high standards of quality and
+                            customer satisfaction,
+                            making our business a trusted and reliable choice for our customers.
+                        </p>
+                    </div>
+                </div>
+                <h1>Pre Booking Online</h1>
+                <div class="features-desc" data-aos="slide-right">
+                    <div class="feature-icon">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div class="feature-text">
+                        <p>
+                            Our Facebook page offers a convenient way for customers to pre-book services or products
+                            online from the comfort of
+                            their own home.
+                            By pre-booking online, customers can have peace of mind knowing that their desired service
+                            or product is reserved and
+                            will be available when they need it.
+                            Pre-booking online through our Facebook page also allows customers to take advantage of
+                            exclusive promotions or
+                            discounts that are only available for early bookings.
+                        </p>
+                    </div>
+                </div>
+                <h1>Affordable Cost</h1>
+                <div class="features-desc" data-aos="slide-right">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-peso-sign"></i>
+                    </div>
+                    <div class="feature-text">
+                        <p>
+                            Our business offers a wide range of products and services at affordable prices, ensuring
+                            that our customers receive
+                            great value for their money.
+                            Despite our affordable prices, we never compromise on quality and always strive to provide
+                            the best possible products
+                            and services to our customers.
+                            By offering affordable prices, we aim to make our products and services accessible to
+                            everyone, regardless of their
+                            budget, without sacrificing on quality.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="features-img" data-aos="flip-down">
+                <img src="./images/Feature.jpg" />
+            </div>
+        </div>
+    </section>
+
+    <!------ Services we offer Main ------>
+
+    <section id="service">
+        <div class="title-text">
+            <h1>Sample Services</h1>
+        </div>
+        <div class="service-box" data-aos="zoom-out-up">
+            <div class="single-service">
+                <img src="./images/services1.jpg">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Fortuner 2018</h3>
+                    <hr>
+                    <p>
+                        Mags and Tire (Black Mamba), Bear Rack, Rain Visor, Side Stepsill, Garnish set, Slim Fender,
+                        Front grill
+                    </p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="./images/services.jpg">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Ford Ranger XL 4x4 2023</h3>
+                    <hr>
+                    <p>
+                        Supra Roller Lid, Top up bed matting, Rain visor, Side stepsill, Garnish set, Slim fender, Front
+                        grill, Mags and Tire
+                    </p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="./images/services2.jpg">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Hilux Conquest 2022</h3>
+                    <hr>
+                    <p>
+                        Supra Roller Lid v3, Garnish set, Rain visor, Side moulding, Railguard cover
+                    </p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="./images/services6.jpg">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Two Ford Ranger 2023</h3>
+                    <hr>
+                    <p>
+                        Facelift Ranger to Raptor, Poplock, Smartcap, Garnish set, Supra Roller Lid v3, Rollbar with
+                        Basket, Slim fender, Roofrail, Garnish set, Rain visor, Deepdish matting
+                    </p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="./images/services0.jpg">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Jimny 2023</h3>
+                    <hr>
+                    <p>
+                        Front grill, Carrier with ladder, Ceramic coating
+                    </p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="./images/services5.jpg">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Ford Ranger 2023</h3>
+                    <hr>
+                    <p>
+                        Hammer Tow Hitch, TopFlip Ultimate, Deepdish matting, Supra Roller Lid, Slim Fender, Roofrail,
+                        Garnish set, Rain visor
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Rate -->
+
+    <section class="rate" data-aos="fade-down">
+        <h1>"Keeping The City Clean <br>One Car At A Time."</h1>
+
+        <button class="rate-btn" id="open-modal"> RATE US</button>
+
+        <div id="modal" class="modal"> <!--modal-->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Rate us</h3>
+                <div class="rating">
+                    <span class="star" data-rating="1">&#9733;</span>
+                    <span class="star" data-rating="2">&#9733;</span>
+                    <span class="star" data-rating="3">&#9733;</span>
+                    <span class="star" data-rating="4">&#9733;</span>
+                    <span class="star" data-rating="5">&#9733;</span>
+                </div>
+                <button id="submit-rating">Submit</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Anniversary -->
+
+    <div class="offer">
+        <div class="small-container" data-aos="zoom-in-up">
+            <div class="row">
+                <div class="col-2">
+                    <img src="./images/Logo.png" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Exclusive Available on Autosonic Car Accessories</p>
+                    <h1>❗️❗️ANNIVERSARY SALE❗️❗️</h1>
+                    <small>We are celebrating our 2nd year anniversary here in Pampanga branch! As a way of showing
+                        our
+                        deepest gratitude, we are offering discounts on most of our accessories from March 13-April
+                        30,
+                        2023! Have your pick ups Summer Vacation ready by installing roller lid for as low as
+                        P25,000
+                        only!<br>
+                        <br>✔️FREE Installation!!!
+                        <br>✔️Guaranteed 100% Leakproof!
+                        <br>✔️No drilling!<br>
+                        <br>Home service also available on schedule basis. Message or give us a call now for more
+                        details.</small>
+                    <br>
+                    <a href="https://www.facebook.com/jaysonvelasco1986" class="btn">Check Out Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Brands -->
+
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="./images/bugatti-logo.png">
+                </div>
+                <div class="col-5">
+                    <img src="./images/chevrolet-logo.png">
+                </div>
+                <div class="col-5">
+                    <img src="./images/ferrari-logo.png">
+                </div>
+                <div class="col-5">
+                    <img src="./images/ford-logo.png">
+                </div>
+                <div class="col-5">
+                    <img src="./images/mitsubishi-logo.png">
+                </div>
+                <div class="col-5">
+                    <img src="./images/corvette-logo.png">
+                </div>
+                <div class="col-5">
+                    <img src="./images/kia-logo.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer  -->
+
+    <div class="footer">
+        <div class="containerfooter">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Our shop is located at:</h3>
+                    <li>SEAOIL Filling Station, Lagundi Mexico <br>Pampanga (Beside SM Pampanga)</li>
+                    <li>WAZE/Google map👇 <br>
+                        AUTOSONIC CAR ACCESSORIES</li>
+                </div>
+                <div class="footer-col-2">
+                    <a href="#banner"><img src="./images/Logo.png"></a>
+                    <p>"Keeping The City Clean One Car At A Time."</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="https://www.ford.com.ph">Ford</a></li>
+                        <li><a href="https://www.ferrari.com/en-PH">Ferrari</a></li>
+                        <li><a href="https://www.nissan.ph">Nissan</a></li>
+                        <li><a href="https://toyota.com.ph">Toyota</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li><i class="fa-brands fa-facebook-f"></i> <a
+                                href="https://www.facebook.com/jaysonvelasco1986">Facebook</a></li>
+                        <li><i class="fa-brands fa-instagram"></i><a
+                                href="https://www.instagram.com/autosoniclipa/?fbclid=IwAR2domIpO8vLwOW4RTfeU0DuRZ3Yx73n_BFY8bMQ8QqYYtfbfVld_xJ9nGo">
+                                Instagram</a>
+                        </li>
+                        <li><i class="fa-brands fa-twitter"></i> Twitter</li>
+                        <li><i class="fa-brands fa-youtube"></i> Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Made with <i class="fa-regular fa-heart"></i> by Sam and Machi / All Rights Reserved
+            </p>
+        </div>
+    </div>
+
+    <a href="#" class="topBtn" id="scroll-to-top">
+        <i class="fa-solid fa-square-caret-up fa-bounce fa-2xl" style="color: #33457a;"></i>
+    </a>
+
+
+
+
+
+    <!----- JavaScript ----->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showNavbar() {
+            navLinks.style.right = "0";
+        }
+
+        function hideNavbar() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script> //onscroll effect
+        AOS.init({
+            duration: 2000,
+            once: false,
+            easing: 'ease'
+        });
+    </script>
+
+
+    <script> //scrollTopBtn
+        const scrollToTopButton = document.getElementById("scroll-to-top");
+
+        window.onscroll = function () {
+            if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+                scrollToTopButton.style.display = "block";
+            } else {
+                scrollToTopButton.style.display = "none";
+            }
+        }
+
+        scrollToTopButton.addEventListener("click", function () {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script>
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop()) {
+                $("nav").addClass("black");
+            }
+            else {
+                $("nav").removeClass("black");
+            }
+        });
+    </script>
+
+    <script> //modal
+        document.getElementById("open-modal").addEventListener("click", function () {
+            document.getElementById("modal").style.display = "block";
+        });
+
+        document.getElementsByClassName("close")[0].addEventListener("click", function () {
+            document.getElementById("modal").style.display = "none";
+        });
+
+        document.getElementById("submit-rating").addEventListener("click", function () {
+            var selectedRating = document.querySelector(".star.active");
+            if (selectedRating) {
+                var ratingValue = selectedRating.getAttribute("data-rating");
+                alert("Thank You!");
+                document.getElementById("modal").style.display = "none";
+            } else {
+                alert("Please select a rating.");
+            }
+        });
+
+        document.querySelectorAll(".star").forEach(function (star) {
+            star.addEventListener("click", function () {
+                document.querySelectorAll(".star").forEach(function (star) {
+                    star.classList.remove("active");
+                });
+                star.classList.add("active");
+            });
+        });
+
+    </script>
+</body>
+
+</html>
